@@ -1,0 +1,24 @@
+[package]
+name = "splashsrv"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.72"
+bitflags = "2.4.0"
+bytes = "1.4.0"
+deku = "0.16"
+env_logger = "0.10.0"
+fallible-iterator = "0.2.0"
+log = "0.4.20"
+rand = "0.8.5"
+rusqlite = "0.29.0"
+rusqlite_migration = "1.0.2"
+rustls-pemfile = "1.0.3"
+serde = { version = "1.0.188", features = ["derive"] }
+serde_json = "1.0.105"
+thiserror = "1.0.48"
+tokio = { version = "1.32.0", features = ["full"] }
+tokio-rustls = "0.24.1"
