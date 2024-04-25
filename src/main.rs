@@ -12,7 +12,7 @@ mod packets;
 mod stream;
 
 fn load_config() -> Result<ServerConfig> {
-    let mut reader = BufReader::new(File::open("../cert.pem")?);
+    let mut reader = BufReader::new(File::open("cert.pem")?);
     let mut certs = Vec::new();
     let mut key = None;
     for item in rustls_pemfile::read_all(&mut reader)? {
